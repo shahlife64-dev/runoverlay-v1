@@ -1,0 +1,7 @@
+<resources>
+    <color name="bg_dark">#CC101318</color>
+    <color name="accent">#39FF88</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_label">#9AA3AF</color>
+    <color name="purple_500">#6650a4</color>
+</resources>

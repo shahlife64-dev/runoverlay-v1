@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telemetry Overlay"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grant permissions, then start the overlay."
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnGrantPermissions"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="1. Grant Permissions"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnPairHr"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="2. Pair Heart Rate Monitor"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnStartOverlay"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="3. Start Overlay"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnStopOverlay"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="Stop Overlay" />
+
+</LinearLayout>

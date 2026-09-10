@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_overlay"
+    android:padding="10dp">
+
+    <!-- Drag handle / close bar -->
+    <LinearLayout
+        android:id="@+id/dragHandle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="6dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_weight="1"
+            android:background="#33FFFFFF" />
+
+        <TextView
+            android:id="@+id/btnCloseOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="✕"
+            android:textColor="@color/text_label"
+            android:textSize="14sp"
+            android:padding="4dp" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4">
+
+        <!-- Time of day -->
+        <LinearLayout style="@style/StatCell">
+            <TextView style="@style/StatLabel" android:text="TIME" />
+            <TextView android:id="@+id/tvTimeOfDay" style="@style/StatValue" android:text="00:00" />
+        </LinearLayout>
+
+        <!-- Date -->
+        <LinearLayout style="@style/StatCell">
+            <TextView style="@style/StatLabel" android:text="DATE" />
+            <TextView android:id="@+id/tvDate" style="@style/StatValue" android:text="--/--" />
+        </LinearLayout>
+
+        <!-- Activity time -->
+        <LinearLayout style="@style/StatCell">
+            <TextView style="@style/StatLabel" android:text="DURATION" />
+            <TextView android:id="@+id/tvActivityTime" style="@style/StatValue" android:text="00:00:00" />
+        </LinearLayout>
+
+        <!-- Distance -->
+        <LinearLayout style="@style/StatCell">
+            <TextView style="@style/StatLabel" android:text="DISTANCE" />
+            <TextView android:id="@+id/tvDistance" style="@style/StatValue" android:text="0.00 km" />
+        </LinearLayout>
+
+        <!-- Pace -->
+        <LinearLayout style="@style/StatCell">
+            <TextView style="@style/StatLabel" android:text="PACE" />
+            <TextView android:id="@+id/tvPace" style="@style/StatValue" android:text="--:-- /km" />
+        </LinearLayout>
+
+        <!-- Heart rate -->
+        <LinearLayout style="@style/StatCell">
+            <TextView style="@style/StatLabel" android:text="HEART RATE" />
+            <TextView android:id="@+id/tvHeartRate" style="@style/StatValue" android:text="-- bpm" />
+        </LinearLayout>
+
+        <!-- Cadence -->
+        <LinearLayout style="@style/StatCell">
+            <TextView style="@style/StatLabel" android:text="CADENCE" />
+            <TextView android:id="@+id/tvCadence" style="@style/StatValue" android:text="-- spm" />
+        </LinearLayout>
+
+        <!-- Elevation -->
+        <LinearLayout style="@style/StatCell">
+            <TextView style="@style/StatLabel" android:text="ELEVATION" />
+            <TextView android:id="@+id/tvElevation" style="@style/StatValue" android:text="-- m" />
+        </LinearLayout>
+
+    </GridLayout>
+</LinearLayout>
